@@ -1,0 +1,26 @@
+[2022-12-25T19:42:01.969+0300] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: titanic_pivot.download_titanic_dataset scheduled__2022-07-03T15:00:00+00:00 [queued]>
+[2022-12-25T19:42:01.984+0300] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: titanic_pivot.download_titanic_dataset scheduled__2022-07-03T15:00:00+00:00 [queued]>
+[2022-12-25T19:42:01.984+0300] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-25T19:42:01.985+0300] {taskinstance.py:1284} INFO - Starting attempt 2 of 2
+[2022-12-25T19:42:01.985+0300] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-25T19:42:02.002+0300] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): download_titanic_dataset> on 2022-07-03 15:00:00+00:00
+[2022-12-25T19:42:02.015+0300] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'titanic_pivot', 'download_titanic_dataset', 'scheduled__2022-07-03T15:00:00+00:00', '--job-id', '450', '--raw', '--subdir', 'DAGS_FOLDER/first_dag_total.py', '--cfg-path', '/var/folders/g7/wpcjf399379f4cptqxrgszxr0000gn/T/tmpgfya7b3d']
+[2022-12-25T19:42:02.019+0300] {standard_task_runner.py:83} INFO - Job 450: Subtask download_titanic_dataset
+[2022-12-25T19:42:02.063+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_***/lib/python3.9/site-packages/***/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2022-12-25T19:42:02.065+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+[2022-12-25T19:42:02.068+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_***/lib/python3.9/site-packages/***/settings.py:400 DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+[2022-12-25T19:42:02.069+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_engine_encoding] has been deprecated, you should use[database/sql_engine_encoding] instead. Please update your `conf.get*` call to use the new name
+[2022-12-25T19:42:02.136+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_***/lib/python3.9/site-packages/***/utils/sqlalchemy.py:121 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2022-12-25T19:42:02.034+0300] {standard_task_runner.py:55} INFO - Started process 28646 to run task
+[2022-12-25T19:42:02.369+0300] {task_command.py:389} INFO - Running <TaskInstance: titanic_pivot.download_titanic_dataset scheduled__2022-07-03T15:00:00+00:00 [running]> on host mbp-vadim.bbrouter
+[2022-12-25T19:42:02.713+0300] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=titanic_pivot
+AIRFLOW_CTX_TASK_ID=download_titanic_dataset
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-03T15:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-03T15:00:00+00:00
+[2022-12-25T19:42:02.755+0300] {local_task_job.py:159} INFO - Task exited with return code Negsignal.SIGSEGV
+[2022-12-25T19:42:02.814+0300] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

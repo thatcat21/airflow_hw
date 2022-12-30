@@ -1,0 +1,140 @@
+[2022-12-26T17:17:37.115+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_enabled option in [core] has been moved to the sql_alchemy_pool_enabled option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:17:37.117+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_enabled] has been deprecated, you should use[database/sql_alchemy_pool_enabled] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:17:37.118+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_size option in [core] has been moved to the sql_alchemy_pool_size option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:17:37.119+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_size] has been deprecated, you should use[database/sql_alchemy_pool_size] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:17:37.120+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_max_overflow option in [core] has been moved to the sql_alchemy_max_overflow option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:17:37.122+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_max_overflow] has been deprecated, you should use[database/sql_alchemy_max_overflow] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:17:37.123+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_recycle option in [core] has been moved to the sql_alchemy_pool_recycle option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:17:37.125+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_recycle] has been deprecated, you should use[database/sql_alchemy_pool_recycle] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:17:37.126+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_pre_ping option in [core] has been moved to the sql_alchemy_pool_pre_ping option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:17:37.127+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_pre_ping] has been deprecated, you should use[database/sql_alchemy_pool_pre_ping] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:17:37.128+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/settings.py:400 DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:17:37.129+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_engine_encoding] has been deprecated, you should use[database/sql_engine_encoding] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:17:37.130+0300] {processor.py:153} INFO - Started process (PID=43370) to work on /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:17:37.131+0300] {processor.py:743} INFO - Processing file /Users/vadim/airflow/dags/hw_dag.py for tasks to queue
+[2022-12-26T17:17:37.131+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:17:37.131+0300] {dagbag.py:538} INFO - Filling up the DagBag from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:17:37.759+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:17:37.752+0300] {dagbag.py:343} ERROR - Failed to import: /Users/vadim/airflow/dags/hw_dag.py
+Traceback (most recent call last):
+  File "/Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/vadim/airflow/dags/hw_dag.py", line 14, in <module>
+    from modules.pipeline import pipeline
+  File "/Users/vadim/airflow_hw/modules/pipeline.py", line 7, in <module>
+    from sklearn.compose import ColumnTransformer, make_column_selector
+ModuleNotFoundError: No module named 'sklearn'
+[2022-12-26T17:17:37.760+0300] {processor.py:755} WARNING - No viable dags retrieved from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:17:38.580+0300] {processor.py:175} INFO - Processing /Users/vadim/airflow/dags/hw_dag.py took 1.466 seconds
+[2022-12-26T17:18:10.937+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_enabled option in [core] has been moved to the sql_alchemy_pool_enabled option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:10.945+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_enabled] has been deprecated, you should use[database/sql_alchemy_pool_enabled] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:10.947+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_size option in [core] has been moved to the sql_alchemy_pool_size option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:10.948+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_size] has been deprecated, you should use[database/sql_alchemy_pool_size] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:10.952+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_max_overflow option in [core] has been moved to the sql_alchemy_max_overflow option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:10.953+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_max_overflow] has been deprecated, you should use[database/sql_alchemy_max_overflow] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:10.954+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_recycle option in [core] has been moved to the sql_alchemy_pool_recycle option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:10.962+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_recycle] has been deprecated, you should use[database/sql_alchemy_pool_recycle] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:10.966+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_pre_ping option in [core] has been moved to the sql_alchemy_pool_pre_ping option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:10.967+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_pre_ping] has been deprecated, you should use[database/sql_alchemy_pool_pre_ping] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:10.968+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/settings.py:400 DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:10.969+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_engine_encoding] has been deprecated, you should use[database/sql_engine_encoding] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:10.970+0300] {processor.py:153} INFO - Started process (PID=43381) to work on /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:18:10.970+0300] {processor.py:743} INFO - Processing file /Users/vadim/airflow/dags/hw_dag.py for tasks to queue
+[2022-12-26T17:18:10.970+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:18:10.970+0300] {dagbag.py:538} INFO - Filling up the DagBag from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:18:11.624+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:18:11.622+0300] {dagbag.py:343} ERROR - Failed to import: /Users/vadim/airflow/dags/hw_dag.py
+Traceback (most recent call last):
+  File "/Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/vadim/airflow/dags/hw_dag.py", line 14, in <module>
+    from modules.pipeline import pipeline
+  File "/Users/vadim/airflow_hw/modules/pipeline.py", line 7, in <module>
+    from sklearn.compose import ColumnTransformer, make_column_selector
+ModuleNotFoundError: No module named 'sklearn'
+[2022-12-26T17:18:11.624+0300] {processor.py:755} WARNING - No viable dags retrieved from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:18:13.857+0300] {processor.py:175} INFO - Processing /Users/vadim/airflow/dags/hw_dag.py took 2.921 seconds
+[2022-12-26T17:18:46.377+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_enabled option in [core] has been moved to the sql_alchemy_pool_enabled option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:46.379+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_enabled] has been deprecated, you should use[database/sql_alchemy_pool_enabled] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:46.381+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_size option in [core] has been moved to the sql_alchemy_pool_size option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:46.382+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_size] has been deprecated, you should use[database/sql_alchemy_pool_size] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:46.383+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_max_overflow option in [core] has been moved to the sql_alchemy_max_overflow option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:46.385+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_max_overflow] has been deprecated, you should use[database/sql_alchemy_max_overflow] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:46.386+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_recycle option in [core] has been moved to the sql_alchemy_pool_recycle option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:46.387+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_recycle] has been deprecated, you should use[database/sql_alchemy_pool_recycle] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:46.389+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_pre_ping option in [core] has been moved to the sql_alchemy_pool_pre_ping option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:46.390+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_pre_ping] has been deprecated, you should use[database/sql_alchemy_pool_pre_ping] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:46.391+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/settings.py:400 DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:18:46.392+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_engine_encoding] has been deprecated, you should use[database/sql_engine_encoding] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:18:46.392+0300] {processor.py:153} INFO - Started process (PID=43402) to work on /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:18:46.393+0300] {processor.py:743} INFO - Processing file /Users/vadim/airflow/dags/hw_dag.py for tasks to queue
+[2022-12-26T17:18:46.393+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:18:46.393+0300] {dagbag.py:538} INFO - Filling up the DagBag from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:18:46.875+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:18:46.872+0300] {dagbag.py:343} ERROR - Failed to import: /Users/vadim/airflow/dags/hw_dag.py
+Traceback (most recent call last):
+  File "/Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/vadim/airflow/dags/hw_dag.py", line 14, in <module>
+    from modules.pipeline import pipeline
+  File "/Users/vadim/airflow_hw/modules/pipeline.py", line 7, in <module>
+    from sklearn.compose import ColumnTransformer, make_column_selector
+ModuleNotFoundError: No module named 'sklearn'
+[2022-12-26T17:18:46.875+0300] {processor.py:755} WARNING - No viable dags retrieved from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:18:47.819+0300] {processor.py:175} INFO - Processing /Users/vadim/airflow/dags/hw_dag.py took 1.443 seconds
+[2022-12-26T17:19:19.504+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_enabled option in [core] has been moved to the sql_alchemy_pool_enabled option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:19.506+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_enabled] has been deprecated, you should use[database/sql_alchemy_pool_enabled] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:19.507+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_size option in [core] has been moved to the sql_alchemy_pool_size option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:19.508+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_size] has been deprecated, you should use[database/sql_alchemy_pool_size] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:19.508+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_max_overflow option in [core] has been moved to the sql_alchemy_max_overflow option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:19.509+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_max_overflow] has been deprecated, you should use[database/sql_alchemy_max_overflow] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:19.510+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_recycle option in [core] has been moved to the sql_alchemy_pool_recycle option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:19.511+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_recycle] has been deprecated, you should use[database/sql_alchemy_pool_recycle] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:19.512+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_pre_ping option in [core] has been moved to the sql_alchemy_pool_pre_ping option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:19.512+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_pre_ping] has been deprecated, you should use[database/sql_alchemy_pool_pre_ping] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:19.513+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/settings.py:400 DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:19.514+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_engine_encoding] has been deprecated, you should use[database/sql_engine_encoding] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:19.514+0300] {processor.py:153} INFO - Started process (PID=43410) to work on /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:19:19.515+0300] {processor.py:743} INFO - Processing file /Users/vadim/airflow/dags/hw_dag.py for tasks to queue
+[2022-12-26T17:19:19.515+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:19:19.515+0300] {dagbag.py:538} INFO - Filling up the DagBag from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:19:20.002+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:19:20.000+0300] {dagbag.py:343} ERROR - Failed to import: /Users/vadim/airflow/dags/hw_dag.py
+Traceback (most recent call last):
+  File "/Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/vadim/airflow/dags/hw_dag.py", line 14, in <module>
+    from modules.pipeline import pipeline
+  File "/Users/vadim/airflow_hw/modules/pipeline.py", line 7, in <module>
+    from sklearn.compose import ColumnTransformer, make_column_selector
+ModuleNotFoundError: No module named 'sklearn'
+[2022-12-26T17:19:20.003+0300] {processor.py:755} WARNING - No viable dags retrieved from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:19:20.839+0300] {processor.py:175} INFO - Processing /Users/vadim/airflow/dags/hw_dag.py took 1.337 seconds
+[2022-12-26T17:19:53.222+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_enabled option in [core] has been moved to the sql_alchemy_pool_enabled option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:53.225+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_enabled] has been deprecated, you should use[database/sql_alchemy_pool_enabled] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:53.226+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_size option in [core] has been moved to the sql_alchemy_pool_size option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:53.227+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_size] has been deprecated, you should use[database/sql_alchemy_pool_size] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:53.228+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_max_overflow option in [core] has been moved to the sql_alchemy_max_overflow option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:53.229+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_max_overflow] has been deprecated, you should use[database/sql_alchemy_max_overflow] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:53.229+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:731 DeprecationWarning: The sql_alchemy_pool_recycle option in [core] has been moved to the sql_alchemy_pool_recycle option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:53.230+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_recycle] has been deprecated, you should use[database/sql_alchemy_pool_recycle] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:53.231+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/configuration.py:717 DeprecationWarning: The sql_alchemy_pool_pre_ping option in [core] has been moved to the sql_alchemy_pool_pre_ping option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:53.232+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_pool_pre_ping] has been deprecated, you should use[database/sql_alchemy_pool_pre_ping] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:53.233+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/settings.py:400 DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+[2022-12-26T17:19:53.233+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_engine_encoding] has been deprecated, you should use[database/sql_engine_encoding] instead. Please update your `conf.get*` call to use the new name
+[2022-12-26T17:19:53.234+0300] {processor.py:153} INFO - Started process (PID=43420) to work on /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:19:53.234+0300] {processor.py:743} INFO - Processing file /Users/vadim/airflow/dags/hw_dag.py for tasks to queue
+[2022-12-26T17:19:53.235+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:19:53.234+0300] {dagbag.py:538} INFO - Filling up the DagBag from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:19:53.740+0300] {logging_mixin.py:137} INFO - [2022-12-26T17:19:53.738+0300] {dagbag.py:343} ERROR - Failed to import: /Users/vadim/airflow/dags/hw_dag.py
+Traceback (most recent call last):
+  File "/Users/vadim/.venv_airflow/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/Users/vadim/airflow/dags/hw_dag.py", line 14, in <module>
+    from modules.pipeline import pipeline
+  File "/Users/vadim/airflow_hw/modules/pipeline.py", line 7, in <module>
+    from sklearn.compose import ColumnTransformer, make_column_selector
+ModuleNotFoundError: No module named 'sklearn'
+[2022-12-26T17:19:53.740+0300] {processor.py:755} WARNING - No viable dags retrieved from /Users/vadim/airflow/dags/hw_dag.py
+[2022-12-26T17:19:54.634+0300] {processor.py:175} INFO - Processing /Users/vadim/airflow/dags/hw_dag.py took 1.413 seconds

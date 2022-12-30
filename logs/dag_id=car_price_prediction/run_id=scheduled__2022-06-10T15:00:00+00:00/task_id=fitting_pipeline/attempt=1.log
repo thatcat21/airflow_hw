@@ -1,0 +1,33 @@
+[2022-12-30T20:58:41.295+0300] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: car_price_prediction.fitting_pipeline scheduled__2022-06-10T15:00:00+00:00 [queued]>
+[2022-12-30T20:58:41.309+0300] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: car_price_prediction.fitting_pipeline scheduled__2022-06-10T15:00:00+00:00 [queued]>
+[2022-12-30T20:58:41.309+0300] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-30T20:58:41.309+0300] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2022-12-30T20:58:41.309+0300] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-30T20:58:41.327+0300] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): fitting_pipeline> on 2022-06-10 15:00:00+00:00
+[2022-12-30T20:58:41.332+0300] {standard_task_runner.py:55} INFO - Started process 65192 to run task
+[2022-12-30T20:58:41.343+0300] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'car_price_prediction', 'fitting_pipeline', 'scheduled__2022-06-10T15:00:00+00:00', '--job-id', '972', '--raw', '--subdir', 'DAGS_FOLDER/hw_dag.py', '--cfg-path', '/var/folders/g7/wpcjf399379f4cptqxrgszxr0000gn/T/tmpwhn194a5']
+[2022-12-30T20:58:41.346+0300] {standard_task_runner.py:83} INFO - Job 972: Subtask fitting_pipeline
+[2022-12-30T20:58:41.373+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_***/lib/python3.9/site-packages/***/settings.py:249 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2022-12-30T20:58:41.375+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_alchemy_conn] has been deprecated, you should use[database/sql_alchemy_conn] instead. Please update your `conf.get*` call to use the new name
+[2022-12-30T20:58:41.377+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_***/lib/python3.9/site-packages/***/settings.py:400 DeprecationWarning: The sql_engine_encoding option in [core] has been moved to the sql_engine_encoding option in [database] - the old setting has been used, but please update your config.
+[2022-12-30T20:58:41.379+0300] {logging_mixin.py:137} WARNING - /Users/vadim/opt/anaconda3/lib/python3.9/configparser.py:408 FutureWarning: section/key [core/sql_engine_encoding] has been deprecated, you should use[database/sql_engine_encoding] instead. Please update your `conf.get*` call to use the new name
+[2022-12-30T20:58:41.411+0300] {logging_mixin.py:137} WARNING - /Users/vadim/.venv_***/lib/python3.9/site-packages/***/utils/sqlalchemy.py:121 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2022-12-30T20:58:41.808+0300] {task_command.py:389} INFO - Running <TaskInstance: car_price_prediction.fitting_pipeline scheduled__2022-06-10T15:00:00+00:00 [running]> on host mbp-vadim.bbrouter
+[2022-12-30T20:58:42.211+0300] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=car_price_prediction
+AIRFLOW_CTX_TASK_ID=fitting_pipeline
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-10T15:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-10T15:00:00+00:00
+[2022-12-30T20:58:45.031+0300] {hw_dag.py:134} INFO - model: LogisticRegression, acc_mean: 0.7591, acc_std: 0.0075
+[2022-12-30T20:59:12.415+0300] {hw_dag.py:134} INFO - model: RandomForestClassifier, acc_mean: 0.7747, acc_std: 0.0027
+[2022-12-30T20:59:24.993+0300] {hw_dag.py:134} INFO - model: SVC, acc_mean: 0.7871, acc_std: 0.0042
+[2022-12-30T20:59:24.994+0300] {hw_dag.py:139} INFO - best model: SVC, accuracy: 0.7871
+[2022-12-30T20:59:29.192+0300] {hw_dag.py:147} INFO - Model is saved as /Users/vadim/***_hw/data/models/cars_pipe_202212302059.pkl
+[2022-12-30T20:59:29.217+0300] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-30T20:59:29.229+0300] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=car_price_prediction, task_id=fitting_pipeline, execution_date=20220610T150000, start_date=20221230T175841, end_date=20221230T175929
+[2022-12-30T20:59:29.302+0300] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-30T20:59:29.336+0300] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check
